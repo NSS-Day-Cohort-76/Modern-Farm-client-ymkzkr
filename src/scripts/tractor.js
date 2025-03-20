@@ -4,13 +4,13 @@ export const plantSeeds = (yearlyPlan) => {
     subArray.forEach(seed => {
        switch (seed) {
         case "Asparagus":
-          plants.push(createAsparagus());
+          plants.push(asparagusSeed);
           break;
         case "Corn":
-          plants.push(createCorn());
+          plants.push(cornSeed);
           break;
         case "Sunflower":
-          plants.push(createSunflower());
+          plants.push(sunflowerSeed);
           break;
         case "Soybean":
           plants.push(createSoybean());
