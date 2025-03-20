@@ -1,4 +1,5 @@
 import { createPlan } from "./plan.js";
+import { usePlants } from "./field.js";
 import { plantSeeds } from "./tractor.js";
 const yearlyPlan = createPlan()
 
@@ -23,3 +24,19 @@ const sunflowerSeed = createSunflower()
 console.log(sunflowerSeed)
 const wheatSeed = createWheat()
 console.log(wheatSeed)
+
+
+const useAsparagus = usePlants(asparagusSeed)
+console.log(useAsparagus)
+const useCorn = usePlants(cornSeed)
+console.log(useCorn)
+const usePotato = usePlants(potatoSeed)
+console.log(usePotato)
+const useSoybean = usePlants(soybeanSeed)
+console.log(useSoybean)
+const useSunflower = usePlants(sunflowerSeed)
+console.log(useSunflower)
+const useWheat = usePlants(wheatSeed)
+console.log(useWheat)
+
+
