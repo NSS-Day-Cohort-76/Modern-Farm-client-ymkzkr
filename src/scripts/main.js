@@ -26,8 +26,3 @@ render.innerHTML = displayHTML
 
 
 
-
-// console.log (...plants)
-// console.log(...harvestPlants(plants))
-
-
