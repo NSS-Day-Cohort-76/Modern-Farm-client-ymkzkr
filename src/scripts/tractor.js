@@ -29,6 +29,9 @@ export const plantSeeds = (yearlyPlan) => {
                 addPlant(createWheat())
             }
         }   
+    }
+}
+
 //     }
 // export const plantSeeds = (yearlyPlan) => {
 //   let plants = []
