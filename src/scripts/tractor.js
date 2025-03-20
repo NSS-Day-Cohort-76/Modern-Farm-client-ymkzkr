@@ -13,22 +13,22 @@ export const plantSeeds = (yearlyPlan) => {
     subArray.forEach(seed => {
        switch (seed) {
         case "Asparagus":
-          plants.push(asparagusSeed);
+          plants.push(useAsparagus);
           break;
         case "Corn":
-          plants.push(cornSeed);
+          plants.push(useCorn);
           break;
         case "Sunflower":
-          plants.push(sunflowerSeed);
+          plants.push(useSunflower);
           break;
         case "Soybean":
-          plants.push(createSoybean());
+          plants.push(useSoybean);
           break;
         case "Potato":
-          plants.push(createPotato());
+          plants.push(usePotato);
           break;
         case "Wheat":
-          plants.push(createWheat());
+          plants.push(useWheat);
           break;
         default:
           console.warn(`Unknown seed type: ${seed}`);
