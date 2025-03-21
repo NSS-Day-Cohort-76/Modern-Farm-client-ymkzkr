@@ -21,7 +21,7 @@ export const addPlant = (seedObject) => {
         plants.push(seed)
     }
     } else {
-        plants.push(seed)
+        plants.push(seedObject)
     }
 }
 
