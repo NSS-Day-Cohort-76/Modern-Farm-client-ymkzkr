@@ -1,3 +1,5 @@
+import { barn } from "./storageBarn.js"
+
 export const harvestPlants = (plantsArray) => {
 
     let harvestedArray = []
@@ -7,11 +9,13 @@ export const harvestPlants = (plantsArray) => {
         if (obj.type === "Corn") {
             for (let i = 0; i < (obj.output / 2); i++) {
                 harvestedArray.push(obj)
+                barn(obj).pushPlant()
               }
         }
         else { 
             for (let i = 0; i < obj.output; i++) {
             harvestedArray.push(obj)
+            barn(obj).pushPlant()
           }
         }
     }
