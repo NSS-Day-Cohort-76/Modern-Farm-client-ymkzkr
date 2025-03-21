@@ -1,7 +1,7 @@
 const weatherConditions = [
     { type: "Sunny", effect: 1.0 },
     { type: "Rainy", effect: 1.2 },
-    { type: "Cloudy", effect: 0.9 },
+    { type: "Cloudy", effect: 0.8 },
     { type: "Stormy", effect: 0.5 }
 ];
 
