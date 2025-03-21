@@ -1,16 +1,3 @@
-import { plantSeeds } from "./tractor.js"
-
-// export const catalog = (harvestedArray) => {
-//     let HTMLString = ''
-   
-//     for (const obj of harvestedArray) {
-//         HTMLString += `
-//         <section class="plant">${obj.type}</section>`
-        
-//     }
-//     return HTMLString
-// }
-
 export const countPlants = (harvestedArray) => {
   const plantArray = harvestedArray.map((obj) => obj.type)
 
