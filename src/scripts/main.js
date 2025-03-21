@@ -22,10 +22,12 @@ const plants = usePlants();
 const harvestedFood = harvestPlants(plants);
 
 //Count types of plants and return Html strings
-const allPlants = countPlants(harvestedFood);
-const orderPlants = countPlantsHTML(allPlants);
 const weather = getWeather();
-applyWeather(harvestedFood, weather)
+const weatherArray = applyWeather(harvestedFood, weather)
+const allPlants = countPlants(weatherArray);
+const orderPlants = countPlantsHTML(allPlants);
+
+
 
 //Render HTML to dom
 const render = document.querySelector(".container")
