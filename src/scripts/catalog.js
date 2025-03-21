@@ -4,7 +4,7 @@ export const countPlants = (harvestedArray) => {
   const plantCount = plantArray.reduce((allPlants, plant) => {
     let currCount = allPlants[plant] ?? 0 
     allPlants[plant] = currCount + 1
-    return allPlants
+    return allPlants 
   }, {})
   return plantCount
 }
