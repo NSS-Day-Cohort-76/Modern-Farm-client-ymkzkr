@@ -37,19 +37,21 @@ h1,h2,h3,h4,h5,h6 {
 .container {
     margin: auto;
     display: flex;
-    flex: 1;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 125px;
-    width: 80%;
+    align-items: center;
+    font-size: 72px;
+    text-align: center;
 }
 
 .plant {
     border: 5px solid black;
-    background: rgb(128, 167, 69);
+    background: rgb(127, 167, 68);
     color: white;
     margin: 3px;
     padding: 10px 30px;
-    width: 15%;
+    width: 40%;
+    height: 200px;
     text-align: center;
+    margin: 10px 30px;
 }
