@@ -1,14 +1,15 @@
-const storePlants = []
+let plants = []
 
-export const addPlant = (seed) => {
-    if (Array.isArray(seed)) {
-        storePlants.push(seed[0])
-        storePlants.push(seed[1])
+export const addPlant = (seedObject) => {
+    if (Array.isArray(seedObject)) {
+    for (let seed of seedObject) {
+        plants.push(seed)
     }
-    else {
-        storePlants.push(seed)
+    } else {
+        plants.push(seedObject)
     }
 }
+
 
 export const usePlants = () => {
     return structuredClone(storePlants)

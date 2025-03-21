@@ -7,58 +7,30 @@ import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js"
 
 export const plantSeeds = (yearlyPlan) => {
-    for (const array of yearlyPlan) {
-        for (const plant of array) {
-            if (plant === "Asparagus") {
-                addPlant(createAsparagus())
-            }
-            else if (plant === "Corn") {
-                addPlant(createCorn())
-            }
-            else if (plant === "Potato") {
-                addPlant(createPotato())
-            }
-            else if (plant === "Soybean") {
-                addPlant(createSoybean())
-            }
-            else if (plant === "Sunflower") {
-                addPlant(createSunflower())
-            }
-            else if (plant === "Wheat") {
-                addPlant(createWheat())
-            }
-        }   
-    }
+  yearlyPlan.forEach(subArray => {
+    subArray.forEach(seed => {
+       switch (seed) {
+        case "Asparagus":
+          addPlant(createAsparagus());
+          break;
+        case "Corn":
+          addPlant(createCorn());
+          break;
+        case "Sunflower":
+          addPlant(createSunflower());
+          break;
+        case "Soybean":
+          addPlant(createSoybean());
+          break;
+        case "Potato":
+          addPlant(createPotato());
+          break;
+        case "Wheat":
+          addPlant(createWheat());
+          break;
+        default:
+          console.warn(`Unknown seed type: ${seed}`);
+      }
+    })
+  });
 }
-
-//     }
-// export const plantSeeds = (yearlyPlan) => {
-//   let plants = []
-//   yearlyPlan.forEach(subArray => {
-//     subArray.forEach(seed => {
-//        switch (seed) {
-//         case "Asparagus":
-//           plants.push(createAsparagus());
-//           break;
-//         case "Corn":
-//           plants.push(createCorn());
-//           break;
-//         case "Sunflower":
-//           plants.push(createSunflower());
-//           break;
-//         case "Soybean":
-//           plants.push(createSoybean());
-//           break;
-//         case "Potato":
-//           plants.push(createPotato());
-//           break;
-//         case "Wheat":
-//           plants.push(createWheat());
-//           break;
-//         default:
-//           console.warn(`Unknown seed type: ${seed}`);
-//       }
-//     })
-//   });
-//   return plants
-// }
