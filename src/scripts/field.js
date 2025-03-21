@@ -12,5 +12,5 @@ export const addPlant = (seedObject) => {
 
 
 export const usePlants = () => {
-    return structuredClone(plants);
+    return structuredClone(plants)
 }
