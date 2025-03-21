@@ -8,7 +8,6 @@ export const addPlant = (seed) => {
     else {
         storePlants.push(seed)
     }
-
 }
 
 export const usePlants = () => {
